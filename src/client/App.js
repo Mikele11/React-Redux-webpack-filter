@@ -49,8 +49,6 @@ class App extends Component {
         default:
           paramInItem = item.username;
       }
-      console.log('paramInItem', paramInItem);
-      console.log('updatedList', updatedList);
       return paramInItem.toLowerCase().search(
         e.target.value.toLowerCase()
       ) !== -1;
@@ -70,8 +68,6 @@ class App extends Component {
     } else {
       userArr = items;
     }
-    console.log('items', items);
-    console.log('userArr', userArr);
 
     const renderTodos = userArr.map((post, index) => (
       <div key={index} className="article">
